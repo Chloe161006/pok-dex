@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Ultime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex Ultime</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Recherche par nom...">
+            <select id="generationFilter">
+                <option value="">Toutes les Générations</option>
+                <option value="1">Génération 1</option>
+                <option value="2">Génération 2</option>
+                <option value="3">Génération 3</option>
+                <option value="4">Génération 4</option>
+                <option value="5">Génération 5</option>
+                <option value="6">Génération 6</option>
+                <option value="7">Génération 7</option>
+                <option value="8">Génération 8</option>
+                <option value="9">Génération 9</option>
+            </select>
+            <select id="typeFilter">
+                <option value="">Tous les Types</option>
+            </select>
+            <button id="themeSwitch">Switch Thème</button>
+            <button id="exportFavorites">Exporter Favoris</button>
+            <button id="importFavorites">Importer Favoris</button>
+        </div>
+    </header>
+    <main id="pokedex"></main>
+    <template id="pokemon-card">
+        <div class="card">
+            <img class="pokemon-image" src="" alt="Pokemon">
+            <h2 class="pokemon-name"></h2>
+            <p class="pokemon-id"></p>
+            <div class="pokemon-types"></div>
+            <button class="favorite-button">☆</button>
+        </div>
+    </template>
+    <script src="app.js"></script>
+</body>
+</html>
