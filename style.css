@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: var(--primary);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.controls {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.controls input, .controls select, .controls button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--text);
+    background: var(--background);
+    color: var(--text);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background: var(--cardBackground);
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.pokemon-name {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.pokemon-id {
+    font-size: 0.9rem;
+    color: var(--subtext);
+}
+
+.pokemon-types {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.pokemon-types span {
